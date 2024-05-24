@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Charmonman:wght@400;700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Frank+Ruhl+Libre:wght@300..900&family=Miltonian&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Questrial&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik+Doodle+Shadow&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <title>JV | Notes</title>
+</head>
+<body onload="listarTarefas()">
+    
+    <!-- Cabeçario -->
+    <header>
+        <nav>
+            <h1>JV | Notes</h1>
+        </nav>
+    </header>
+
+    <!-- New Task -->
+    <section id="newTask">
+
+        <div>
+
+            <div class="headTask">
+                <h1>Tarefas</h1>
+                <div>
+                    <input id="createTask" name="createTask" type="text" placeholder="Escreva uma tarefa...">
+                    
+                    <button type="submit" onclick="criarTarefa()">Novo</button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- View Task -->
+    <section id="tasks">
+
+        <div id="allTasks" class="allTasks">
+
+            <div id="contentTask" class="contentTask">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <span class="copyright">direitos reservados &copy; 2024</span>
+    </footer>
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

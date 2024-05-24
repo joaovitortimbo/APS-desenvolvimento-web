@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Frank Ruhl Libre", serif;
+}
+
+/*              HEADER              */
+header {
+  padding: 20px;
+  border-radius: 0 0 50px 0;
+  background-color: #1f2140;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav h1 {
+  color: #fff;
+  font-size: 2em;
+}
+
+ul a {
+  color: #fff;
+  font-size: 1.5em;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #898cb0;
+}
+
+/*              NEW TASK              */
+#newTask {
+  padding: 30px;
+  height: auto;
+}
+
+.headTask {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.headTask h1 {
+  color: #1f2140;
+  font-size: 3em;
+}
+
+.headTask input {
+  width: 30vw;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 2px #a3a4bf;
+}
+
+.headTask button {
+  color: #fff;
+  height: 6.5vh;
+  width: 10vw;
+  border: none;
+  padding: 7px;
+  font-size: 1.3em;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: #1f2140;
+}
+
+.headTask button:hover {
+  cursor: pointer;
+  background-color: #898cb0;
+}
+
+/*              TASK              */
+.tasks {
+  width: 80vw;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.allTasks {
+  gap: 15px;
+  height: 50vh;
+  display: flex;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  flex-direction: column;
+  scrollbar-color: #4c5163 white;
+  justify-content: start;
+}
+
+.contentTask {
+  gap: 30px;
+  width: 70vw;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.task {
+  width: 70%;
+  height: 9vh;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #4c5163;
+  justify-content: space-between;
+}
+
+.allTasks h2 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.8em;
+}
+
+.containerOptions {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.containerOptions button {
+  padding: 1px;
+  outline: none;
+  display: flex;
+  cursor: pointer;
+  border-radius: 5px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.edit {
+  height: 30px;
+  width: 70px;
+  margin: 4px;
+  border-radius: 5px;
+  border: solid 2px rgb(27, 85, 15);
+  background: rgb(27, 85, 15);
+  cursor: pointer;
+}
+
+.edit a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+}
+
+.delete {
+  height: 30px;
+  width: 70px;
+  background-color: #bd241f;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btnVoltar {
+  background-color: #898cb0;
+  width: 120px;
+  height: 60px;
+  text-decoration: none;
+  color: #1f2140;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #1f2140;
+  border-radius: 100px;
+  position: absolute;
+  left: 10%;
+  top: 70%;
+}
+
+.btnVoltar:hover {
+  background-color: #6d719b;
+  color: #1f2140;
+}
+
+footer {
+  bottom: 0;
+  height: 12vh;
+  width: 100vw;
+  position: fixed;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: -4px;
+  border-radius: 50px 0 0 0;
+  align-content: center;
+  display: inline-block;
+  background-color: #1f2140;
+}
+
+.copyright {
+  font-weight: bold;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}

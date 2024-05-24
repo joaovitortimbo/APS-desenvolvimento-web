@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Charmonman:wght@400;700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Frank+Ruhl+Libre:wght@300..900&family=Miltonian&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Questrial&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik+Doodle+Shadow&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <title>JV | Notes</title>
+</head>
+<body  onload="selecionarTarefa()">
+    
+    <!-- Cabeçario -->
+    <header>
+        <nav>
+            <h1><a href="../index.html" style="text-decoration: none; color: white;">JV | Notes</a></h1>
+        </nav>
+    </header>
+
+    <!-- New Task -->
+    <section id="newTask">
+
+        <div>
+
+            <div class="headTask">
+                <h1 style="margin-bottom: 50px;">Edite suas notas</h1>
+                <br>
+                <div>
+                    <label for="tituloInput">Reescreva o conteúdo da tarefa</label>
+                    <br>
+                    <input id="tituloInput" name="tituloInput" type="text" placeholder="Escreva uma tarefa...">
+                    <button type="submit" onclick="editarTarefa()">Salvar</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- View Task -->
+    <section id="tasks">
+
+        <div id="containerTarefas" class="allTasks">
+
+            <div id="contentTask" class="contentTask">
+
+                <div id="task" class="task">
+                    <h2 id="tituloTarefa"></h2>
+                </div>
+
+            </div>
+
+            <a href="../index.html" class="btnVoltar">Voltar</a>
+        </div>
+
+    </section>
+
+
+
+    <!-- Rodapé -->
+    <footer>
+        <span class="copyright">direitos reservados &copy; 2024</span>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    
+</body>
+</html>
